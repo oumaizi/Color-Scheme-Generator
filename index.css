@@ -109,3 +109,13 @@ button:hover {
     cursor: pointer;
     opacity: 0.97;
 }
+
+@media screen and (max-width: 550px) {
+    html {
+        background-color: black;
+    }
+
+    body {
+        height: 90vh;
+    }
+}
