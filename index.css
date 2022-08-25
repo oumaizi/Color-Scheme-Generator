@@ -1,0 +1,111 @@
+:root {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(42, 224, 206);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    max-width: 550px;
+    height: 68vh;
+    background-color: rgb(240, 240, 240);
+    border-radius: 12px;
+    box-shadow: 1px 1px 50px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    margin: 3.5em 0 auto;
+    padding: 1em 1em;
+}
+
+.color-panel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+nav > p {
+    margin: 0;
+    font-size: 3rem;
+    width: 100%;
+    font-weight: 500;
+    color: rgb(35, 35, 35);
+    margin-bottom: 0.7em;
+    text-align: center;
+}
+
+nav > hr {
+    border: 1px solid rgb(210, 223, 218);
+    width: 100%;
+    margin-top: 0.7em;
+    margin-bottom: 1.5em;
+}
+
+select {
+    padding: 0.3em;
+    max-width: 312px;
+    width: 100%;
+}
+
+button {
+    font-size: 1.2rem;
+    max-width: 123px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition-property: background-color, color;
+    transition-duration: 0.5s, 0.5s;
+}
+
+.color-picker {
+    height: 42px;
+    width: 20%;
+    /* height: 100%; */
+}
+
+select,
+button,
+.color-picker {
+    border: none;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+
+#color-showarea {
+    box-shadow: inset 0 1em 1.2em -1em rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+}
+
+.popup-box {
+    display: none;
+    position: absolute;
+    background: #4977d0;
+    left: 0;
+    z-index: 100;
+}
+
+.popup-box .show {
+    display: block;
+}
+
+.color-box:hover,
+.color-picker:hover,
+.color-selector:hover {
+    cursor: pointer;
+    opacity: 0.97;
+}

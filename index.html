@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        /> -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <p>Color Scheme Generator</p>
+            <!-- <hr /> -->
+            <div class="color-panel">
+                <input
+                    type="color"
+                    class="color-picker"
+                    id="color-picker"
+                    value="#000000"
+                />
+                <select
+                    name="color-selector"
+                    class="color-selector"
+                    id="color-selector"
+                    placeholder="Monochrome"
+                >
+                    <option value="Monochrome">Monochrome</option>
+                    <option value="Monochrome-dark">Monochrome-dark</option>
+                    <option value="Monochrome-light">Monochrome-light</option>
+                    <option value="Analogic">Analogic</option>
+                    <option value="Complement">Complement</option>
+                    <option value="Analogic-complement">
+                        Analogic-complement
+                    </option>
+                    <option value="Triad">Triad</option>
+                </select>
+                <!-- <button id="color-btn">Get color scheme</button> -->
+            </div>
+        </nav>
+        <div id="color-showarea"></div>
+        <div class="popup-box" id="popup-box">Copied</div>
+        <script src="index.js"></script>
+    </body>
+</html>
